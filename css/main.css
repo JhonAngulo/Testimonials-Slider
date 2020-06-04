@@ -1,0 +1,100 @@
+:root {
+  --DarkBlue : hsl(240, 37%, 20%);
+  --GrayishBlue: hsl(240, 18%, 77%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+}
+
+.testimonial {
+  margin-top: 50px;
+  text-align: center;
+  min-width: 375px;
+}
+
+.testimonial__image-container{
+  background-image: url('/images/pattern-bg.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 25px;
+}
+
+.testimonial__image {
+  border-radius: 6px;
+  width: 250px;
+  margin: 30px 0px 20px 22px;
+  /* box-shadow: 0px 62px 52px -46px rgba(0,0,0,0.75); */
+  box-shadow: 0px 60px 45px -46px rgba(32,32,70,0.7);
+}
+
+.buttons__container {
+  position: absolute;
+  margin-top: -70px;
+  margin-left: -40px;
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+.buttons__item {
+  margin: 4px 0px 0px 0px;
+  padding: 6px 12px;
+}
+
+.testimonial__text-container {
+  margin-top: 20px;
+  background-image: url('/images/pattern-quotes.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 60px;
+  padding: 3% 10% ;
+}
+
+.testimonial__text {
+  color: var(--DarkBlue);
+  font-weight: 300;
+}
+
+.testimonial__name {
+  color: var(--DarkBlue);
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.testimonial__job {
+  margin-top: 2px;
+  color: var(--GrayishBlue);
+  font-weight: 500;
+}
+
+.testimonial__footer {
+  height: 70px;
+  background-image: url('/images/pattern-curve.svg');
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.attribution {
+  margin-top: 100px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+@media (max-width: 900px) {
+  body {
+    font-size: 18px;
+  }
+
+}
