@@ -1,14 +1,14 @@
 :root {
-  --DarkBlue : hsl(240, 37%, 20%);
+  --DarkBlue: hsl(240, 37%, 20%);
   --GrayishBlue: hsl(240, 18%, 77%);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 32px;
 }
 
@@ -17,40 +17,42 @@ body {
 }
 
 .testimonial {
-  margin-top: 50px;
+  margin: 20px;
   text-align: center;
-  min-width: 375px;
 }
 
-.testimonial__image-container{
-  background-image: url('/images/pattern-bg.svg');
+.testimonial__image-container {
+  /* background-color: hsl(228, 76%, 75%); */
+  background-image: url("/images/pattern-bg.svg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
-  margin: 25px;
+  margin: auto;
+  width: 320px;
+  height: 300px;
+  text-align: center;
 }
 
 .testimonial__image {
   border-radius: 6px;
-  width: 250px;
-  margin: 30px 0px 20px 22px;
+  margin-top: 30px;
+  width: 246px;
   /* box-shadow: 0px 62px 52px -46px rgba(0,0,0,0.75); */
-  box-shadow: 0px 60px 45px -46px rgba(32,32,70,0.7);
+  box-shadow: 0px 60px 60px -40px rgba(32, 32, 70, 0.7);
 }
 
 .buttons__container {
   position: absolute;
-  margin-top: -70px;
-  margin-left: -40px;
+  margin: -30px 0px 0px 120px;
   background-color: #fff;
   border-radius: 25px;
 }
 
 .buttons__item {
-  margin: 4px 0px 0px 0px;
   padding: 6px 12px;
-  width: 13px;
-  height: 22px;
+  margin-top: 6px;
+  width: 10px;
+  height: 14px;
 }
 
 .buttons__item:hover {
@@ -59,11 +61,11 @@ body {
 
 .testimonial__text-container {
   margin-top: 20px;
-  background-image: url('/images/pattern-quotes.svg');
+  background-image: url("/images/pattern-quotes.svg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 60px;
-  padding: 3% 10% ;
+  padding: 3% 10%;
 }
 
 .testimonial__text {
@@ -84,8 +86,9 @@ body {
 }
 
 .testimonial__footer {
+  margin: -20px;
   height: 70px;
-  background-image: url('/images/pattern-curve.svg');
+  background-image: url("/images/pattern-curve.svg");
   background-position: left;
   background-size: contain;
   background-repeat: no-repeat;
@@ -101,10 +104,70 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
-
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   body {
     font-size: 18px;
   }
+}
 
+@media (min-width: 1000px) {
+  .testimonial {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 900px;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .testimonial__image-container {
+    /* background-color: hsl(228, 76%, 75%); */
+    /* background-image: url("/images/pattern-bg.svg"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 440px;
+    height: 440px;
+    padding: 60px;
+    margin: 0px 0px 0px -60px;
+  }
+
+  .testimonial__image {
+    margin: 24px 0px 0px 0px;
+    border-radius: 6px;
+    width: 400px;
+    /* box-shadow: 0px 62px 52px -46px rgba(0,0,0,0.75); */
+    box-shadow: 0px 60px 60px -40px rgba(32, 32, 70, 0.7);
+  }
+
+  .buttons__container {
+    margin: -30px 0px 0px 50px;
+  }
+
+  .testimonial__text-container {
+    background-size: 100px;
+    text-align: left;
+    width: 600px;
+    margin-top: 100px;
+  }
+
+  .testimonial__name, .testimonial__job {
+    display: inline;
+    font-size: 24px;
+  }
+
+  .testimonial__footer {
+    position: absolute;
+    margin-left: -206px;
+    bottom: 0;
+    height: 150px;
+    width: 700PX;
+    background-image: url("/images/pattern-curve.svg");
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .hide {
+    display: none;
+  }
 }
