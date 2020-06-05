@@ -12,6 +12,10 @@ body {
   font-size: 32px;
 }
 
+.hide {
+  display: none;
+}
+
 .testimonial {
   margin-top: 50px;
   text-align: center;
@@ -45,6 +49,12 @@ body {
 .buttons__item {
   margin: 4px 0px 0px 0px;
   padding: 6px 12px;
+  width: 13px;
+  height: 22px;
+}
+
+.buttons__item:hover {
+  cursor: pointer;
 }
 
 .testimonial__text-container {

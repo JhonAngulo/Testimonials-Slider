@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" />
     <link
       rel="icon"
       type="image/png"
@@ -14,14 +14,27 @@
     <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
   </head>
   <body>
-    <div class="testimonial">
+    <div class="testimonial" id="item_1">
       <div class="testimonial__image-container">
-        <img class="testimonial__image" src="images/image-tanya.jpg" alt="person image" />
-        <div class="shadow"></div>
+        <img
+          class="testimonial__image"
+          src="images/image-tanya.jpg"
+          alt="person image"
+        />
       </div>
       <span class="buttons__container">
-        <img class="buttons__item" src="/images/icon-prev.svg" alt="icon prev">
-        <img class="buttons__item" src="/images/icon-next.svg" alt="icon next">
+        <img
+          class="buttons__item"
+          src="/images/icon-prev.svg"
+          alt="icon prev"
+          onclick="handleChange()"
+        />
+        <img
+          class="buttons__item"
+          src="/images/icon-next.svg"
+          alt="icon next"
+          onclick="handleChange()"
+        />
       </span>
       <div class="testimonial__text-container">
         <p class="testimonial__text">
@@ -35,15 +48,33 @@
       <div class="testimonial__footer"></div>
     </div>
 
-    <div class="testimonial">
+    <div class="testimonial hide" id="item_2">
       <div class="testimonial__image-container">
-        <img class="testimonial__image" src="images/image-john.jpg" alt="person image" />
+        <img
+          class="testimonial__image"
+          src="images/image-john.jpg"
+          alt="person image"
+        />
       </div>
+      <span class="buttons__container">
+        <img
+          class="buttons__item"
+          src="/images/icon-prev.svg"
+          alt="icon prev"
+          onclick="handleChange()"
+        />
+        <img
+          class="buttons__item"
+          src="/images/icon-next.svg"
+          alt="icon next"
+          onclick="handleChange()"
+        />
+      </span>
       <div class="testimonial__text-container">
         <p class="testimonial__text">
           “ If you want to lay the best foundation possible I’d recommend taking
-        this course. The depth the instructors go into is incredible. I now feel
-        so confident about starting up as a professional developer. ”
+          this course. The depth the instructors go into is incredible. I now
+          feel so confident about starting up as a professional developer. ”
         </p>
         <h3 class="testimonial__name">John Tarkpor</h3>
         <h3 class="testimonial__job">Junior Front-end Developer</h3>
@@ -57,5 +88,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Jhon Angulo</a>.
     </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
