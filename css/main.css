@@ -157,7 +157,7 @@ body {
 
   .testimonial__footer {
     position: absolute;
-    margin-left: -206px;
+    left: 0px;
     bottom: 0;
     height: 150px;
     width: 700PX;
