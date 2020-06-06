@@ -22,7 +22,6 @@ body {
 }
 
 .testimonial__image-container {
-  /* background-color: hsl(228, 76%, 75%); */
   background-image: url("/images/pattern-bg.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -37,7 +36,6 @@ body {
   border-radius: 6px;
   margin-top: 30px;
   width: 246px;
-  /* box-shadow: 0px 62px 52px -46px rgba(0,0,0,0.75); */
   box-shadow: 0px 60px 60px -40px rgba(32, 32, 70, 0.7);
 }
 
@@ -120,8 +118,6 @@ body {
   }
 
   .testimonial__image-container {
-    /* background-color: hsl(228, 76%, 75%); */
-    /* background-image: url("/images/pattern-bg.svg"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -135,7 +131,6 @@ body {
     margin: 24px 0px 0px 0px;
     border-radius: 6px;
     width: 400px;
-    /* box-shadow: 0px 62px 52px -46px rgba(0,0,0,0.75); */
     box-shadow: 0px 60px 60px -40px rgba(32, 32, 70, 0.7);
   }
 
