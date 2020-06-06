@@ -2,10 +2,10 @@
 
 <a href="https://testimonials-slider.jhonangulo.now.sh/">Testimonials Slider</a>
 
-# deskyop version
+# desktop version
 
-![Design preview for the Rock, Paper, Scissors coding challenge](./design/desktop-design-slide-1.jpg)
+![Design preview for Testimonials Slider coding challenge](./design/desktop-design-slide-1.jpg)
 
 # mobile version
 
-![Design preview for the Rock, Paper, Scissors coding challenge](./design/mobile-design-slide-1.jpg)
+![Design preview for Testimonials Slider coding challenge](./design/mobile-design-slide-1.jpg)
