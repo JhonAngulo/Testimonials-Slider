@@ -1,6 +1,6 @@
 # Frontend Mentor | Testimonials Slider
 
-<a href="https://vercel.com/jhonangulo/testimonials-slider">Testimonials Slider</a>
+<a href="https://testimonials-slider.jhonangulo.now.sh/">Testimonials Slider</a>
 
 # deskyop version
 
