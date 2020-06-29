@@ -1,5 +1,5 @@
 .DS_Store
 design/*
-vscode
+.vscode
 !design/mobile-design-slide-1.jpg
 !design/desktop-design-slide-1.jpg
