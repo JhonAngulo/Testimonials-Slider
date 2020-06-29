@@ -1,24 +1,24 @@
 document.onkeydown = checkKey
-var active = 0
+var testimonialActive = 0
 
-function handleChange(dir) {
+function handleChange(order) {
   const items = document.getElementsByClassName('testimonial')
 
   for (let i = 0; i < items.length; i++) {
     items[i].classList.add('hide')
   }
 
-  dir === 'next' ? active++ : active--
+  order === 'next' ? testimonialActive++ : testimonialActive--
 
-  if (active === -1) {
-    active = items.length - 1
+  if (testimonialActive === -1) {
+    testimonialActive = items.length - 1
   }
 
-  if (active > items.length - 1) {
-    active = 0
+  if (testimonialActive > items.length - 1) {
+    testimonialActive = 0
   }
 
-  items[active].classList.remove('hide')
+  items[testimonialActive].classList.remove('hide')
 }
 
 function checkKey(e) {
