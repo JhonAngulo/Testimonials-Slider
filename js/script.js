@@ -1,16 +1,31 @@
 document.onkeydown = checkKey
-const item_1 = document.getElementById('item_1')
-const item_2 = document.getElementById('item_2')
+var active = 0
 
-function handleChange() {
-  item_1.classList.toggle('hide')
-  item_2.classList.toggle('hide')
+function handleChange(dir) {
+  const items = document.getElementsByClassName('testimonial')
+
+  for (let i = 0; i < items.length; i++) {
+    items[i].classList.add('hide')
+  }
+
+  dir === 'next' ? active++ : active--
+
+  if (active === -1) {
+    active = items.length - 1
+  }
+
+  if (active > items.length - 1) {
+    active = 0
+  }
+
+  items[active].classList.remove('hide')
 }
 
 function checkKey(e) {
-  console.log(e.keyCode)
-
-  if (e.keyCode === 37 || e.keyCode === 39) {
-    handleChange()
+  if (e.keyCode === 37) {
+    handleChange('next')
+  }
+  if (e.keyCode === 39) {
+    handleChange('prev')
   }
 }
